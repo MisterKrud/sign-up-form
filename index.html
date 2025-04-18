@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up!</title>
-<link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&family=Agbalumo&family=Chewy&family=Mr+Dafoe&family=Parkinsans:wght@300&family=Shippori+Antique+B1&family=Unbounded:wght@200..900&display=swap');
+        </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <div id="container">
         <div id="main-section">
             <div id="logo"></div>
-            <div id="logo-text">Krud's Coffee Club</div>
+            <div id="logo-text"><h2>Coffee Club</h2></div>
             <div id="sign-up-form">
                 <form action="submit">
-                    <fieldset><legend>Personal details</legend>
-
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" aria-hidden="required" required />
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" aria-hidden="required" required />
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" aria-hidden="required" required />
-                    <label for="phone">Phone Number</label>
-                    <input type="number" id="phone" name="last-name" aria-hidden="required" required />
-                </fieldset>
+                    
+                        <ul>
+                            <li>
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name"  required />
+                            </li>
+                            <li>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required />
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required />
+                            </li>
+                            <li>
+                                <label for="phone">Phone Number</label>
+                                <input type="number" id="phone" name="last-name"  required />
+                            </li>
+                        </ul>
+                    
+<ul>
+    <li>
 
                     <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="password" aria-hidden="required" required />
+                    <input type="password" id="pwd" name="password"  required /></li><li>
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" id="pwd" name="last-name" aria-hidden="required" required />
-
+                    <input type="password" id="pwd" name="last-name" required /> </li>
+                </ul>
+<ul><li>
                     <button type="submit">Sign Up!</button>
 
-                    
-                    
-                    
+                </li>
+                </ul>
+
 
                 </form>
             </div>
 
         </div>
         <div id="decorative-third">
-            <div id="inspiration-text"></div>
-            <div id="photo-credit"></div>
+            <div id="inspiration-text"><p>Our coffee is like a warm hug in a mug—rich, toasty, and full of comfort. Each sip wraps you in cozy, feel-good vibes, whether you're starting your day or winding it down. It's the perfect blend of warmth and joy, brewed just for you. ☕</p></div>
+            <div id="photo-attribution"><p><a href="https://unsplash.com/photos/blue-ceramic-coffee-cup-and-white-saucer-PM4Vu1B0gxk">Photo: Anne Spratt (via unsplash)</a></p></div>
         </div>
-    </div> 
-    
+    </div>
+
 </body>
+
 </html>

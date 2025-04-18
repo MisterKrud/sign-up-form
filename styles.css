@@ -8,6 +8,14 @@ button {
   box-sizing: border-box;
   border: none;
 }
+:link {
+  text-decoration: none;
+  color: rgb(218, 98, 54);
+}
+
+:visited {
+  color:rgb(129, 70, 48)
+}
 
 
 label{
@@ -28,11 +36,23 @@ input:focus {
   
 }
 
-#inspiration-text{
-  font-family:"Mr Dafoe";
-  font-size: 1.4rem;
-  color:rgb(66, 66, 66);
+#inspiration-text {
+  width:80%;
+  margin-top: 35vh;
+  background-color: rgb(255 255 255 / 20%);
+  box-shadow: 2rem 2rem 2rem rgb(188, 212, 214);
+  border-radius: 2px;
+  padding: 1rem 3rem;
+  text-wrap: wrap;
+}
+
+#inspiration-text>p{
+  font-family:"Oregano";
+  
+  font-size: 1.2rem;
+  color:#191210;
   line-height: 2rem;
+ 
 }
 
 #inspiration-text>p::first-letter{
@@ -46,8 +66,12 @@ input:focus {
 
   #main-section {
     background-color:#ffffff;
-    width: 65vw;
-    padding: 4rem;
+    width: 60vw;
+    padding: 5rem;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
   }
   body {
     font-family: "Parkinsans", Verdana, Geneva, Tahoma, sans-serif;
@@ -76,15 +100,13 @@ input:focus {
 
   #container {
     display: flex;
-    height: 100vh;
+    height: 98vh;
+    overflow: hidden;
   
   }
 
   #main-section{
-    flex-grow: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center
+    
   }
 
   #logo-text {
@@ -98,17 +120,20 @@ input:focus {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 2;
+    align-items: center;
+    
     background-image: url("coffee-background.jpg") ;
-    background-position: center;
+    background-position-y: 6rem;
+    background-position-x: center;
     background-size: cover;
 
-    width: 35vw;
-    padding: 4rem;
+    width: 40vw;
+    
   }
 
   #photo-attribution{
-    font-size: .6rem;
-    margin: -3rem -3rem;
+    font-size: .8rem;
+    margin: 1rem;
   }
  
  
