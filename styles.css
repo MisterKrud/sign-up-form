@@ -190,8 +190,8 @@ input:focus,#pwd:focus,#confirm:focus {
     display: flex;
     padding: 2rem 0;
     flex-direction: column;
-    border-bottom: rgb(230, 229, 229) 2px solid;
-    box-shadow: 4px 3px 06px rgb(223, 222, 222);
+    border-bottom: rgb(255, 255, 255) 2px solid;
+    box-shadow: 4px 3px 6px rgb(223, 222, 222);
    
    
   }
