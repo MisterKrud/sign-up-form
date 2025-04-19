@@ -7,7 +7,13 @@ button {
   margin: 0;
   box-sizing: border-box;
   border: none;
+  appearance: none;
 }
+
+/* input:focus {
+  appearance: none;
+  outline: 0;
+} */
 :link {
   text-decoration: none;
   color: rgb(218, 98, 54);
@@ -15,6 +21,11 @@ button {
 
 :visited {
   color:rgb(129, 70, 48)
+}
+
+#pwd+p {
+  color: gray;
+  font-size: 0.6rem;
 }
 
 #badge {
@@ -64,9 +75,9 @@ input{
   border-radius:5px;
 }
 input:focus {
+  outline: 0;
   box-shadow: .4rem .4rem .4rem lightgray;
- 
-  
+  border:#a3dbd8 solid 2px;
 }
 
 #inspiration-text {
@@ -126,6 +137,7 @@ input:focus {
 
   li {display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
     
   }
 
