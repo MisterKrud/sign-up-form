@@ -23,10 +23,7 @@ button {
   color:rgb(129, 70, 48)
 }
 
-#pwd+p {
-  color: gray;
-  font-size: 0.6rem;
-}
+
 
 #badge {
   
@@ -61,6 +58,11 @@ button {
   z-index: 2;
 }
 
+#pwd:invalid,#confirm:invalid{
+  border: red solid 1px
+}
+
+
 label{
   color:rgb(31, 31, 31)
 }
@@ -74,7 +76,8 @@ input{
   margin-top: 0.15rem;
   border-radius:5px;
 }
-input:focus {
+input:focus,#pwd:focus,#confirm:focus {
+  
   outline: 0;
   box-shadow: .4rem .4rem .4rem lightgray;
   border:#a3dbd8 solid 2px;
@@ -99,13 +102,7 @@ input:focus {
  
 }
 
-#inspiration-text>p::first-letter{
-  font-size: 3rem;
-}
 
-.email:invalid {
- 
-}
 
 
   #main-section {
@@ -137,7 +134,7 @@ input:focus {
 
   li {display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  
     
   }
 

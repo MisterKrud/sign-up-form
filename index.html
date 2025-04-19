@@ -19,26 +19,26 @@
             <div id="logo"></div>
             <div id="logo-text"><h2>Krudler's Coffee Club</h2></div>
             <div id="sign-up-form">
-                <form action="demo">
+                <form action="demo" method="post">
                     
                         <ul>
                             <li>
                                 <label for="first-name">First Name</label>
-                                <input type="text" id="first-name" name="first-name"  />
+                                <input type="text" id="first-name" name="first-name" required />
                             </li>
                             <li>
                                 <label for="last-name">Last Name</label>
-                                <input type="text" id="last-name" name="last-name"  />
+                                <input type="text" id="last-name" name="last-name" required />
                             </li>
                         </ul>
                         <ul>
                             <li>
                                 <label for="mail">Email</label>
-                                <input type="email" id="mail" name="mail"  />
+                                <input type="email" id="mail" name="mail" required />
                             </li>
                             <li>
                                 <label for="phone">Phone Number</label>
-                                <input type="text" id="phone" name="phone" pattern="([0-9]{11})" placeholder="Digits only. No spaces" required>
+                                <input type="text" id="phone" name="phone" pattern="([0-9\s]{10,12})" required>
                             </li>
                         </ul>
                     
@@ -46,13 +46,14 @@
     <li>
 
                     <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="pwd"  pattern="(\d\s{8})" placeholder="Min 8 alpha-numeric characters"required>
-                <!-- <p>*Passwords must contain a lowercase letter, an uppercase letter, a number and be at least 8 characters</p></li><li> -->
+                    <input type="password" id="pwd" name="pwd"  pattern="([a-zA-Z\d]{8,20})" placeholder="8-20 alpha-numeric characters"required>
+               
+                </li><li> 
                     <label for="confirm">Confirm Password</label>
-                    <input type="password" id="confirm" name="confirm" required /> </li>
+                    <input type="password" id="confirm" name="confirm" placeholder="Passwords must match" pattern="([a-zA-Z\d]{8,20})"  required /> </li>
                 </ul>
 <ul><li>
-                    <button type="submit" value="Sign up!">Sign up!</button>
+                    <button type="submit" id="submitButton">Sign up!</button>
 
                 </li>
                 </ul>
@@ -67,7 +68,8 @@
             <div id="photo-attribution"><p><a href="https://unsplash.com/photos/blue-ceramic-coffee-cup-and-white-saucer-PM4Vu1B0gxk">Photo: Anne Spratt (via unsplash)</a></p></div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
+
 
 </html>
