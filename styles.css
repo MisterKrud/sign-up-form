@@ -84,10 +84,10 @@ input:focus,#pwd:focus,#confirm:focus {
 }
 
 #inspiration-text {
-  width:80%;
+  
   margin-top: 35vh;
-  background-color: rgb(255 255 255 / 20%);
-  box-shadow: 2rem 2rem 2rem rgb(188, 212, 214);
+  background-color: rgb(255 255 255 / 10%);
+  box-shadow: 2rem 2rem 10rem rgb(188, 212, 214);
   border-radius: 2px;
   padding: 1rem 3rem;
   text-wrap: wrap;
@@ -107,12 +107,13 @@ input:focus,#pwd:focus,#confirm:focus {
 
   #main-section {
     background-color:#ffffff;
+    
     width: 60vw;
-    padding: 5rem;
+    
     flex-grow: 5;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
   }
   body {
     font-family: "Parkinsans", Verdana, Geneva, Tahoma, sans-serif;
@@ -154,9 +155,6 @@ input:focus,#pwd:focus,#confirm:focus {
   
   }
 
-  #main-section{
-    
-  }
 
   #logo-text {
     text-align: center;
@@ -186,12 +184,15 @@ input:focus,#pwd:focus,#confirm:focus {
     font-size: .8rem;
     margin: 1rem;
   }
- 
+
  
   form {
     display: flex;
+    padding: 2rem 0;
     flex-direction: column;
-    
+    border-bottom: rgb(230, 229, 229) 2px solid;
+    box-shadow: 4px 3px 06px rgb(223, 222, 222);
+   
    
   }
 
@@ -213,4 +214,13 @@ input:focus,#pwd:focus,#confirm:focus {
     background-color: coral;
     color: white;
     box-shadow: 4px 4px 3px bisque;
+  }
+
+  #members{
+    margin-top: 2rem;
+    margin-left: 2vw 
+  /* position: absolute;
+  bottom: 20vh;
+  left: 2rem; */
+  
   }
